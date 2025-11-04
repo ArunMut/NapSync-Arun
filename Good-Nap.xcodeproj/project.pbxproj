@@ -10,7 +10,8 @@
 		0356276DC381470FAE0B6B724EF2F3D9 /* Good_NapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D0B345570B445A80F71803C1995143 /* Good_NapTests.swift */; };
 		173D8F479E524484889A2417F35EBA2F /* Good_NapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B7701F51E44F7B71E6FF566A24F66 /* Good_NapApp.swift */; };
 		1B2E791044E2408BB10B98D5FB7FD167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD59A32AEE764B66829FDC8A0704AA8B /* Assets.xcassets */; };
-		1C14F2EA07CC4424AC53BA1EEE5F6FD8 /* TrainingDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7129B2894344167AAF47734ADE60DFC /* TrainingDataGenerator.swift */; };
+                1C14F2EA07CC4424AC53BA1EEE5F6FD8 /* TrainingDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7129B2894344167AAF47734ADE60DFC /* TrainingDataGenerator.swift */; };
+                24F2A6EE6C3D48C9AEBE9BA9E0AE38A8 /* SoundscapeAudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D8F0A02A3F4A1DBF22E0C3 /* SoundscapeAudioEngine.swift */; };
 		36FEDC82016C41AA9152FF5D29C81347 /* NapSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386A8350AD764BB3856B8351EC2D2591 /* NapSession.swift */; };
 		4DCC93FF7DD94218960B349F6D9B31E4 /* BiometricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B91E4EA5E3F4EAA89385363399E8644 /* BiometricData.swift */; };
 		4EF67EB2BABB418EAD62FDD56292C9C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926600FA798419583D6CE0385381D44 /* ContentView.swift */; };
@@ -77,7 +78,8 @@
 /* Begin PBXFileReference section */
 		16AC4F64349D4A79A34AFD314142CBF5 /* Good_Nap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Good_Nap.entitlements; sourceTree = "<group>"; };
 		274A468ACB5F463EBE20083969B40A9A /* Good-Nap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good-Nap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		386A8350AD764BB3856B8351EC2D2591 /* NapSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapSession.swift; sourceTree = "<group>"; };
+                386A8350AD764BB3856B8351EC2D2591 /* NapSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapSession.swift; sourceTree = "<group>"; };
+                E7D8F0A02A3F4A1DBF22E0C3 /* SoundscapeAudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeAudioEngine.swift; sourceTree = "<group>"; };
 		51F6BC902EB3453400193743 /* Good-Nap Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good-Nap Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F6BC9C2EB3453500193743 /* Good-Nap Watch App Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Good-Nap Watch App Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F6BCA62EB3453500193743 /* Good-Nap Watch App Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Good-Nap Watch App Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,15 +225,16 @@
 			);
 			sourceTree = "<group>";
 		};
-		F7A692A34C7B46CCA3592BA3263B8C6C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				8B1483CD7BCA4B968D370381F0A11FE1 /* MLModelService.swift */,
-				A7129B2894344167AAF47734ADE60DFC /* TrainingDataGenerator.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
+                F7A692A34C7B46CCA3592BA3263B8C6C /* Services */ = {
+                        isa = PBXGroup;
+                        children = (
+                                8B1483CD7BCA4B968D370381F0A11FE1 /* MLModelService.swift */,
+                                E7D8F0A02A3F4A1DBF22E0C3 /* SoundscapeAudioEngine.swift */,
+                                A7129B2894344167AAF47734ADE60DFC /* TrainingDataGenerator.swift */,
+                        );
+                        path = Services;
+                        sourceTree = "<group>";
+                };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,16 +465,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		308CACAB14A54F4190B94CADAFBC0261 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F04CEF9766E422DA20D2B12F4ED9278 /* MLTrainingView.swift in Sources */,
-				1C14F2EA07CC4424AC53BA1EEE5F6FD8 /* TrainingDataGenerator.swift in Sources */,
-				F9B719188FD04D778B37907A631B3CAC /* MLModelService.swift in Sources */,
-				80F55CBB987443B687D4D4D0492E111A /* SleepStage.swift in Sources */,
-				36FEDC82016C41AA9152FF5D29C81347 /* NapSession.swift in Sources */,
-				4DCC93FF7DD94218960B349F6D9B31E4 /* BiometricData.swift in Sources */,
+                308CACAB14A54F4190B94CADAFBC0261 /* Sources */ = {
+                        isa = PBXSourcesBuildPhase;
+                        buildActionMask = 2147483647;
+                        files = (
+                                9F04CEF9766E422DA20D2B12F4ED9278 /* MLTrainingView.swift in Sources */,
+                                1C14F2EA07CC4424AC53BA1EEE5F6FD8 /* TrainingDataGenerator.swift in Sources */,
+                                F9B719188FD04D778B37907A631B3CAC /* MLModelService.swift in Sources */,
+                                24F2A6EE6C3D48C9AEBE9BA9E0AE38A8 /* SoundscapeAudioEngine.swift in Sources */,
+                                80F55CBB987443B687D4D4D0492E111A /* SleepStage.swift in Sources */,
+                                36FEDC82016C41AA9152FF5D29C81347 /* NapSession.swift in Sources */,
+                                4DCC93FF7DD94218960B349F6D9B31E4 /* BiometricData.swift in Sources */,
 				4EF67EB2BABB418EAD62FDD56292C9C5 /* ContentView.swift in Sources */,
 				173D8F479E524484889A2417F35EBA2F /* Good_NapApp.swift in Sources */,
 			);

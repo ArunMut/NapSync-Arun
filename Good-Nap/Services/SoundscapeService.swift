@@ -24,17 +24,25 @@ class SoundscapeService: ObservableObject {
                 label: "Pre-wake",
                 soundPalette: "Soft nature",
                 coachingNote: "Preparing your mind for gentle awakening",
-                startOffset: napDuration - 300,
-                duration: 180,
+                startOffset: max(napDuration - 480, 0),
+                duration: 210,
                 intensity: "Low"
             ),
             SoundscapeSegment(
                 label: "Wake transition",
                 soundPalette: "Melodic tones",
                 coachingNote: "Gradually increasing awareness",
-                startOffset: napDuration - 120,
-                duration: 120,
+                startOffset: max(napDuration - 210, 0),
+                duration: 150,
                 intensity: "Medium"
+            ),
+            SoundscapeSegment(
+                label: "Final rise",
+                soundPalette: "Bright chimes",
+                coachingNote: "Inviting gentle alertness",
+                startOffset: max(napDuration - 90, 0),
+                duration: 120,
+                intensity: "High"
             )
         ]
         
