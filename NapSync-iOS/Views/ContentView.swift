@@ -33,14 +33,14 @@ struct ContentView: View {
                 Label("History", systemImage: "clock.arrow.circlepath")
             }
             .tag(1)
-            
-            // Insights Tab - ML insights and recommendations
+
+            // Analytics Tab - AI powered trends and metrics
             NavigationView {
-                MLInsightsView()
+                AnalyticsView()
                     .environmentObject(mlModelService)
             }
             .tabItem {
-                Label("Insights", systemImage: "brain.head.profile")
+                Label("Analytics", systemImage: "chart.bar.xaxis")
             }
             .tag(2)
             
